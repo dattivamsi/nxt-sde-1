@@ -1,10 +1,8 @@
-// Write your JS code here
 import {Component} from 'react'
-import {Link} from 'react-router-dom'
-
+import {ToastContainer, toast} from 'react-tostify'
 import './index.css'
 
-class AddItem extends Component {
+class Add extends Component {
   state = {
     titleText: '',
     linkText: '',
@@ -50,9 +48,9 @@ class AddItem extends Component {
       categoryText === '' ||
       descriptionText === ''
     ) {
-      console.log('emptyfield')
+      toast.error('emptyfield')
     } else if (descriptionText < 20) {
-      console.log('descripiton less than 20')
+      toast.error('descripiton less than 20')
     } else {
       this.makeApiCall()
     }
@@ -64,7 +62,7 @@ class AddItem extends Component {
     )
 
     if (response.ok === true) {
-      console.log('Resource Added Successfully')
+      toast.success('Resource Added Successfully')
       this.setState({
         titleText: '',
         linkText: '',
@@ -73,7 +71,7 @@ class AddItem extends Component {
         descriptionText: '',
       })
     } else {
-      console.log('Something Went Wrong')
+      toast.error('Something Went Wrong')
     }
   }
 
@@ -89,9 +87,7 @@ class AddItem extends Component {
     return (
       <div>
         <div>
-          <Link to="/">
-            <p>User</p>
-          </Link>
+            <Link to="/"><p>User</p></Link>
         </div>
         <p>Item Details</p>
         <form id="myForm">
@@ -161,9 +157,10 @@ class AddItem extends Component {
             Create
           </button>
         </form>
+        <ToastContainer />
       </div>
     )
   }
 }
 
-export default AddItem
+export default Add
