@@ -1,0 +1,35 @@
+/* Write your CSS code here */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  width: 50px;
+}
+.profile {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.createButton {
+  margin-right: 20px;
+  margin-bottom: 25px;
+  background-color: rgb(115, 250, 103);
+  color: #ffffff;
+  font-size: 15px;
+  height: 25px;
+  width: 100px;
+  border-radius: 7px;
+  font-weight: 500;
+}

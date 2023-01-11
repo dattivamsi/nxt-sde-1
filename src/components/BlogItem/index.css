@@ -1,0 +1,40 @@
+.app-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.blog-item {
+  width: 339px;
+  background: #ffffff;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.list-items {
+  display: flex;
+}
+.blog-item-image {
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.blog-item-title {
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-left: 15px;
+}
+.blog-item-category {
+  font-size: 12px;
+  font-family: 'Roboto';
+  padding-bottom: 5px;
+  margin-left: 15px;
+}
+.blog-item-info {
+  margin-left: 4px;
+  margin-top: 2px;
+  padding-bottom: 2px;
+}

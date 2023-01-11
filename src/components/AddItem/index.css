@@ -1,0 +1,10 @@
+/* Write your CSS code here */
+.form-control {
+  width: 300px;
+  padding: 7px;
+  border-radius: 3px;
+  outline: 0;
+  border: 1px solid #131212;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
